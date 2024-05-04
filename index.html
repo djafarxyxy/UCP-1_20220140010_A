@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS untuk menyesuaikan tampilan */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5; /* Warna latar belakang */
+    }
+    .navbar {
+      background-color: #212529; /* Warna navbar */
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important; /* Warna teks navbar */
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #ffc107 !important; /* Warna teks navbar saat hover */
+    }
+    .greeting {
+      font-size: 18px;
+      color: #212529; /* Warna teks header */
+    }
+    .card {
+      border: none; /* Menghilangkan border card */
+    }
+    .card-header {
+      background-color: #212529; /* Warna latar belakang header card */
+      color: #ffffff; /* Warna teks header card */
+    }
+    .footer {
+      background-color: #212529; /* Warna latar belakang footer */
+      color: #ffffff; /* Warna teks footer */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">A Day In My Life</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/djafarxyxy">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.tiktok.com/@gygver_164">TikTok</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://discord.gg/rGaG4KGM">Discord</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-sm-6">
+        <!-- Header kiri -->
+        <p class="greeting">Selamat Datang Kembali!</p>
+      </div>
+      <div class="col-sm-6 text-right">
+        <!-- Header kanan -->
+        <p id="datetime"></p>
+      </div>
+    </div>
+    
+    <div id="carouselExampleControls" class="carousel slide mt-4" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://1.bp.blogspot.com/-hTGMx1M6Bvk/T-dffBHsvoI/AAAAAAAATt0/TVa4n2DK5_w/s1600/sepak-bola.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://wallpapercave.com/wp/wp9526641.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://i.pinimg.com/originals/ec/12/bb/ec12bbb898abed610635d1e5daab4ae9.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Berita Terbaru -->
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2>Berita Terbaru</h2>
+        <div class="card-deck">
+          <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.ZmcpvgO8pNhv7Qns3p2-KQHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Berita bola </h5>
+              <p class="card-text">RONALDO menjadi pencetak gol terbanyak.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://images.search.yahoo.com/images/view;_ylt=AwrjYbCbZTZmrZQuSqOJzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkA2I2ZWIxZDllZDYwOGZkMzdlMWIxMjhkMTAzMzVhNTI5BGdwb3MDNARpdANiaW5n?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3Dindo%2Bjuara%2Bformula%2B2%26ei%3DUTF-8%26type%3DE210US91215G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Asb-top%26tab%3Dorganic%26ri%3D4&w=1280&h=852&imgurl=i.pinimg.com%2Foriginals%2Fcc%2F20%2F80%2Fcc2080c8bc86296b5f11d9d1b1763fd3.jpg&rurl=https%3A%2F%2Fid.pinterest.com%2Fpin%2F279645458091227671%2F&size=104.1KB&p=indo+juara+formula+2&oid=b6eb1d9ed608fd37e1b128d10335a529&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&fr=mcafee&tt=Sean+Gelael+-+Indonesian+racing+driver.+GP2+Pre-season+testing.+Circuito+de+Jerez+-+Spain%2C+29+...&b=0&ni=160&no=4&ts=&tab=organic&sigr=hPU19rmRwGCU&sigb=lSLFNbkyOK83&sigi=ohNwRTHlTFqQ&sigt=xhRE1R5q.MFx&.crumb=aiGjeIu2ltu&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Asb-top&type=E210US91215G0" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Berita balap F2</h5>
+              <p class="card-text">Indonesia menjadi juara satu Formula 2.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.COlNyrL9MD6t-vk9QETuzwHaEK&pid=Api&P=0&h=220" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Berita esport</h5>
+              <p class="card-text">Sentinel menjadi juara vct.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <footer class="footer mt-4 py-3 text-center">
+    <div class="container">
+      <span class="text-muted">© 2024 A Day In My Life</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Script untuk menampilkan tanggal dan jam yang berubah secara real-time
+    function updateTime() {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false });
+      document.getElementById('datetime').textContent = dateTimeString;
+    }
+
+    updateTime();
+    setInterval(updateTime, 1000); // Perbarui setiap detik
+  </script>
+</body>
+</html>
